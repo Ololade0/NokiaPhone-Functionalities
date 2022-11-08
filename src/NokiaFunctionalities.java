@@ -35,8 +35,8 @@ public class NokiaFunctionalities {
         userSelection = select(nokiaMenu);
         switch (userSelection) {
             case 1 -> menu1();
-            case 2 -> showMenu2();
-            case 3 -> showMenu3();
+            case 2 -> menu2();
+            case 3 -> menu3();
             case 4 -> showMenu4();
             case 5 -> showMenu5();
             case 6 -> showMenu6();
@@ -121,7 +121,7 @@ public class NokiaFunctionalities {
                 """;
         //System.out.println(nokiaMenu);
         userSelection = select(nokiaMenu);
-        if (userSelection == 0) showMenu2();
+        if (userSelection == 0) menu2();
     }
 
     public static void showMenu2_8() {
@@ -134,7 +134,7 @@ public class NokiaFunctionalities {
         switch (userSelection) {
             case 1 -> showMenu2_81("Type of View");
             case 2 -> showMenu2_81("Memory Status");
-            case 3 -> showMenu2();
+            case 3 -> menu2();
         }
     }
 
@@ -148,7 +148,7 @@ public class NokiaFunctionalities {
     }
 
 
-    public static void showMenu2() {
+    public static void menu2() {
         nokiaMenu = """
                     1. Search
                     2. Service Nos.
@@ -178,7 +178,7 @@ public class NokiaFunctionalities {
         }
     }
 
-    public static void showMenu3() {
+    public static void menu3() {
         nokiaMenu = """
                 Chat
                 0. Back
